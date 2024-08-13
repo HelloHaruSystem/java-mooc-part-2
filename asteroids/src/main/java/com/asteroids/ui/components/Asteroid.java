@@ -1,6 +1,6 @@
+
 package com.asteroids.ui.components;
 
-import javafx.scene.shape.Polygon;
 
 import java.util.Random;
 
@@ -26,5 +26,7 @@ public class Asteroid extends Character {
     public void move() {
         super.move();
         super.getCharacter().setRotate(super.getCharacter().getRotate() + rotationalMovement);
+
     }
+
 }

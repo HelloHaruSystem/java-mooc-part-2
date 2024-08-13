@@ -1,7 +1,7 @@
 
 package com.asteroids.ui.components;
 
-import com.asteroids.AsteroidsApplication;
+
 import com.asteroids.ui.UserInterface;
 import javafx.geometry.Point2D;
 import javafx.scene.shape.Polygon;
@@ -10,6 +10,7 @@ import javafx.scene.shape.Shape;
 public abstract class Character {
     private Polygon character;
     private Point2D movement;
+    private boolean isAlive;
 
     public Character(Polygon polygon, int x, int y) {
         this.character = polygon;
@@ -17,6 +18,7 @@ public abstract class Character {
         this.character.setTranslateY(y);
 
         this.movement = new Point2D(0, 0);
+        this.isAlive = true;
     }
 
     public Polygon getCharacter() {
@@ -60,11 +62,14 @@ public abstract class Character {
         double changeX = Math.cos(Math.toRadians(this.character.getRotate()));
         double changeY = Math.sin(Math.toRadians(this.character.getRotate()));
 
+
         // for changing move speed
         changeX *= 0.05;
         changeY *= 0.05;
 
+
         this.movement = this.movement.add(changeX, changeY);
+
     }
 
     public boolean collide(Character otherCharacter) {
@@ -72,6 +77,22 @@ public abstract class Character {
         // Shape.intersect(shape s1, shape s2) returns the intersection of two shape objects if 0 no collision
         Shape collisionArea = Shape.intersect(this.character, otherCharacter.getCharacter());
         return collisionArea.getBoundsInLocal().getWidth() != -1;
+    }
+
+    public void setMovement(Point2D movement) {
+        this.movement = movement;
+    }
+
+    public Point2D getMovement() {
+        return this.movement;
+    }
+
+    public void setAlive(boolean deadOrAlive) {
+        this.isAlive = deadOrAlive;
+    }
+
+    public boolean isAlive() {
+        return this.isAlive;
     }
 
 }

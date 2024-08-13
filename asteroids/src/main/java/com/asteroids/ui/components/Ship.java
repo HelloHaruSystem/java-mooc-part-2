@@ -1,3 +1,4 @@
+
 package com.asteroids.ui.components;
 
 import javafx.geometry.Point2D;

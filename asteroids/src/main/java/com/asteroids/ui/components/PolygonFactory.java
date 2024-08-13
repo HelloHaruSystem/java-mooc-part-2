@@ -1,3 +1,4 @@
+
 package com.asteroids.ui.components;
 
 import javafx.scene.shape.Polygon;
@@ -30,5 +31,7 @@ public class PolygonFactory {
         }
 
         return polygon;
+
     }
+
 }
