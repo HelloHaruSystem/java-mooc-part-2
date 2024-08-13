@@ -5,4 +5,7 @@ module com.asteroids {
 
     opens com.asteroids to javafx.fxml;
     exports com.asteroids;
+    opens com.asteroids.ui to javafx.graphics;
+    exports com.asteroids.ui;
+
 }
