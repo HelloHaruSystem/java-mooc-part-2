@@ -1,4 +1,10 @@
 package com.asteroids.ui.components;
 
-public class Asteroid {
+import javafx.scene.shape.Polygon;
+
+public class Asteroid extends Character {
+
+    public Asteroid(int x, int y) {
+        super(new PolygonFactory().createPolygon(), x, y);
+    }
 }

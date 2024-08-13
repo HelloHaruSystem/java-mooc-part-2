@@ -1,6 +1,7 @@
 package com.asteroids.ui;
 
 
+import com.asteroids.ui.components.Asteroid;
 import com.asteroids.ui.components.Ship;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
@@ -10,8 +11,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 
 public class UserInterface extends Application {
@@ -48,9 +48,29 @@ public class UserInterface extends Application {
         // first we create a ship object. after we initialize a polygon with the ship.getShip() method
         Ship playerShip = new Ship(300, 200);
 
+        // list to store multiple asteroids
+        List<Asteroid> asteroids = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+            Random random = new Random();
+            Asteroid asteroid = new Asteroid(random.nextInt(100), random.nextInt(100));
+            asteroids.add(asteroid);
+        }
+
 
         // we then add the ship to the pane
-        pane.getChildren().add(playerShip.getShip());
+        pane.getChildren().add(playerShip.getCharacter());
+
+
+        // adds the asteroids to the pane
+        asteroids.forEach(asteroid -> pane.getChildren().add(asteroid.getCharacter()));
+
+
+        //calling the movements method of the asteroid class
+        asteroids.forEach(asteroid -> asteroid.turnRight());
+        asteroids.forEach(asteroid -> asteroid.turnRight());
+        asteroids.forEach(asteroid -> asteroid.accelerate());
+        asteroids.forEach(asteroid -> asteroid.accelerate());
+
 
 
         // add pane to scene
@@ -94,11 +114,24 @@ public class UserInterface extends Application {
                 }
 
 
+                // movement
                 playerShip.move();
+                asteroids.forEach(asteroid -> asteroid.move());
 
+
+                // checks for collition
+                asteroids.forEach(asteroid -> {
+                    if (playerShip.collide(asteroid)) {
+                        stop();
+                    }
+                });
 
             }
         }.start();
+
+
+        // adding functionality to asteroid
+
 
 
         return scene;
