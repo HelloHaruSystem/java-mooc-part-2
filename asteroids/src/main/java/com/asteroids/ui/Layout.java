@@ -1,9 +1,9 @@
+
 package com.asteroids.ui;
 
-import com.asteroids.ui.components.Ship;
-import javafx.collections.ObservableList;
 import javafx.scene.layout.Pane;
-import javafx.scene.shape.Circle;
+
+
 
 public class Layout {
 
@@ -12,7 +12,7 @@ public class Layout {
 
     }
 
-    public Pane getPane() {
+    public Pane getPane(int width, int height) {
         // main layout
 
 
@@ -20,7 +20,7 @@ public class Layout {
         Pane mainPane = new Pane();
 
         // styling
-        mainPane.setPrefSize(600, 400);
+        mainPane.setPrefSize(width, height);
         mainPane.setStyle("-fx-background-color: #808080");
 
 

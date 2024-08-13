@@ -16,6 +16,8 @@ import java.util.*;
 
 public class UserInterface extends Application {
 
+    public static int WIDTH = 300;
+    public static int HEIGHT = 200;
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -32,7 +34,7 @@ public class UserInterface extends Application {
 
 
         // adding the pane from out layout to a scene
-        Scene mainScene = getMainScene(layout.getPane());
+        Scene mainScene = getMainScene(layout.getPane(WIDTH, HEIGHT));
 
 
         //sitting the scene to our stage, sets title and calls show()
@@ -46,13 +48,13 @@ public class UserInterface extends Application {
 
         // initializing the components we need for our scene
         // first we create a ship object. after we initialize a polygon with the ship.getShip() method
-        Ship playerShip = new Ship(300, 200);
+        Ship playerShip = new Ship(WIDTH / 2, HEIGHT / 2);
 
         // list to store multiple asteroids
         List<Asteroid> asteroids = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             Random random = new Random();
-            Asteroid asteroid = new Asteroid(random.nextInt(100), random.nextInt(100));
+            Asteroid asteroid = new Asteroid(random.nextInt(WIDTH / 3), random.nextInt(HEIGHT));
             asteroids.add(asteroid);
         }
 

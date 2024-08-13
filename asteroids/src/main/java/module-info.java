@@ -1,6 +1,7 @@
 module com.asteroids {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.desktop;
 
 
     opens com.asteroids to javafx.fxml;

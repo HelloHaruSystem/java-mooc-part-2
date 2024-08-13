@@ -1,6 +1,8 @@
 
 package com.asteroids.ui.components;
 
+import com.asteroids.AsteroidsApplication;
+import com.asteroids.ui.UserInterface;
 import javafx.geometry.Point2D;
 import javafx.scene.shape.Polygon;
 import javafx.scene.shape.Shape;
@@ -35,6 +37,22 @@ public abstract class Character {
     public void move() {
         this.character.setTranslateX(this.character.getTranslateX() + this.movement.getX());
         this.character.setTranslateY(this.character.getTranslateY() + this.movement.getY());
+
+        if (this.character.getTranslateX() < 0) {
+            this.character.setTranslateX(this.character.getTranslateY() + UserInterface.WIDTH);
+        }
+
+        if (this.character.getTranslateY() > UserInterface.WIDTH) {
+            this.character.setTranslateX(this.character.getTranslateX() % UserInterface.WIDTH);
+        }
+
+        if (this.character.getTranslateY() < 0) {
+            this.character.setTranslateY(this.character.getTranslateX() + UserInterface.HEIGHT);
+        }
+
+        if (this.character.getTranslateY() > UserInterface.HEIGHT) {
+            this.character.setTranslateY(this.character.getTranslateY() % UserInterface.HEIGHT);
+        }
 
     }
 
