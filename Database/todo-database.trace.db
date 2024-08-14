@@ -1,0 +1,51 @@
+2024-08-14 18:16:52.545522+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODO" already exists; SQL statement:
+CREATE TABLE Todo (id int auto_increment primary key, name varchar(255), description varchar(10000), done boolean) [42101-224]
+2024-08-14 18:17:41.063136+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODO" already exists; SQL statement:
+CREATE TABLE Todo (id int auto_increment primary key, name varchar(255), description varchar(10000), done boolean) [42101-224]
+2024-08-14 18:18:01.685277+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODO" already exists; SQL statement:
+CREATE TABLE Todo (id int auto_increment primary key, name varchar(255), description varchar(10000), done boolean) [42101-224]
+2024-08-14 18:18:23.403067+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODO" already exists; SQL statement:
+CREATE TABLE Todo (id int auto_increment primary key, name varchar(255), description varchar(10000), done boolean) [42101-224]
+2024-08-14 18:18:27.133015+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODO" already exists; SQL statement:
+CREATE TABLE Todo (id int auto_increment primary key, name varchar(255), description varchar(10000), done boolean) [42101-224]
+2024-08-14 18:18:27.163120+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODO" already exists; SQL statement:
+CREATE TABLE Todo (id int auto_increment primary key, name varchar(255), description varchar(10000), done boolean) [42101-224]
+2024-08-14 18:19:00.012779+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODO" already exists; SQL statement:
+CREATE TABLE Todo (id int auto_increment primary key, name varchar(255), description varchar(10000), done boolean) [42101-224]
+2024-08-14 18:19:00.063786+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODO" already exists; SQL statement:
+CREATE TABLE Todo (id int auto_increment primary key, name varchar(255), description varchar(10000), done boolean) [42101-224]
+2024-08-14 18:19:33.826777+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODO" already exists; SQL statement:
+CREATE TABLE Todo (id int auto_increment primary key, name varchar(255), description varchar(10000), done boolean) [42101-224]
+2024-08-14 18:19:37.026516+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODO" already exists; SQL statement:
+CREATE TABLE Todo (id int auto_increment primary key, name varchar(255), description varchar(10000), done boolean) [42101-224]
+2024-08-14 18:19:37.051417+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODO" already exists; SQL statement:
+CREATE TABLE Todo (id int auto_increment primary key, name varchar(255), description varchar(10000), done boolean) [42101-224]
+2024-08-14 18:19:50.019554+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODO" already exists; SQL statement:
+CREATE TABLE Todo (id int auto_increment primary key, name varchar(255), description varchar(10000), done boolean) [42101-224]
+2024-08-14 18:19:51.656982+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODO" already exists; SQL statement:
+CREATE TABLE Todo (id int auto_increment primary key, name varchar(255), description varchar(10000), done boolean) [42101-224]
+2024-08-14 18:19:51.682359+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODO" already exists; SQL statement:
+CREATE TABLE Todo (id int auto_increment primary key, name varchar(255), description varchar(10000), done boolean) [42101-224]
+2024-08-14 18:20:01.406792+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODO" already exists; SQL statement:
+CREATE TABLE Todo (id int auto_increment primary key, name varchar(255), description varchar(10000), done boolean) [42101-224]
+2024-08-14 18:20:06.981506+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODO" already exists; SQL statement:
+CREATE TABLE Todo (id int auto_increment primary key, name varchar(255), description varchar(10000), done boolean) [42101-224]
+2024-08-14 18:20:07.005149+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODO" already exists; SQL statement:
+CREATE TABLE Todo (id int auto_increment primary key, name varchar(255), description varchar(10000), done boolean) [42101-224]

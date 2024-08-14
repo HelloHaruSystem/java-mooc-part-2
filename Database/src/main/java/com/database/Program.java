@@ -3,7 +3,7 @@ package com.database;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class Progam {
+public class Program {
 
     public static void main(String[] args) throws SQLException {
         String databasePath = "jdbc:h2:./todo-database";
